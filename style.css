@@ -344,7 +344,7 @@ a {
   border-radius: 50%;
   overflow: hidden;
   padding: 1px;
-  margin: 0 auto 20px;
+  margin: 0 auto 30px;
   background: linear-gradient(90deg, var(--accent), var(--primary), var(--accent));
   background-size: 200% 100%;
   transition: all 0.4s ease;
