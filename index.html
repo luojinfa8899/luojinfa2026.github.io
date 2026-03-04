@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>无限进步 | 平面设计 × AI训练师</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <!-- 统一引入Font Awesome 6.x -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- 自定义样式 -->
+  <link rel="stylesheet" href="style.css">
+  <!-- 引入高级字体 -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 鼠标光团层（高级柔光+不遮挡） -->
+  <div class="cursor-glow"></div>
+
+  <!-- 导航栏（磨砂玻璃+滚动动画） -->
+  <nav class="navbar" id="navbar">
+    <div class="logo">
+      <span>無限</span><span class="accent">進步</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home"><i class="fas fa-home"></i> 首页</a></li>
+      <li><a href="#about"><i class="fas fa-user"></i> 关于我</a></li>
+      <li><a href="#portfolio"><i class="fas fa-briefcase"></i> 作品集</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i> 联系方式</a></li>
+    </ul>
+    <!-- 移动端汉堡菜单 -->
+    <div class="hamburger"><i class="fas fa-bars"></i></div>
+  </nav>
+
+  <!-- 首页（动态流光背景+光团呼应） -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div> <!-- 渐变背景层 -->
+    <div class="stream-lines"></div> <!-- 动态流光层 -->
+    <div class="hero-content">
+      <h1>平面设计 <span class="highlight">×</span> AI训练师</h1>
+      <p>用设计思维赋能AI，让技术更有温度</p>
+      <div class="btn-group">
+        <a href="#portfolio" class="btn primary-btn">查看作品集</a>
+        <a href="#about" class="btn secondary-btn">了解更多</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于我（卡片化+动效） -->
+  <section id="about" class="about">
+    <h2 class="section-title">关于我<br><span>ABOUT ME</span></h2>
+    <div class="about-container">
+      <div class="avatar-box">
+        <div class="avatar-border">
+          <img src="个人头像.png" alt="头像" class="avatar-img"> style="margin-top: 50px; margin-left: 1px
+        </div>
+        <div class="avatar-badge">罗金发</div>
+      </div>
+      <div class="about-text">
+        <p class="intro-text">
+          我是罗金发，深耕平面设计 4 年，凭借对行业趋势的敏锐判断，主动转型 AI 训练师。
+          我擅长将成熟的设计逻辑与 AI 创作结合，用设计思维写提示词、用审美能力优化 AI 输出，打通 “创意 — 效率 — 美感” 的闭环，持续产出高质量作品。
+        </p>
+        <h3 class="skill-title">核心技能</h3>
+        <div class="skills">
+          <span class="tag"><i class="fas fa-image"></i> 海报设计</span>
+          <span class="tag"><i class="fas fa-box"></i> 包装设计</span>
+          <span class="tag"><i class="fas fa-database"></i> 数据构建</span>
+          <span class="tag"><i class="fas fa-brain"></i> 模型评测</span>
+          <span class="tag"><i class="fas fa-robot"></i> 自动化prompt工程</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品集（8卡片 + 两排4列 + 1px细描边流动） -->
+  <section id="portfolio" class="portfolio">
+    <h2 class="section-title">精选作品集<br><span>PORTFOLIO</span></h2>
+    <p class="portfolio-desc">点击查看详情即可预览</p>
+    <div class="portfolio-grid">
+      <!-- 第一排：4个卡片 -->
+      <div class="portfolio-card-wrap">
+        <div class="portfolio-card">
+          <div class="card-img-box">
+            <img src="work1.jpg" alt="AI辅助品牌视觉设计" class="portfolio-card-img">
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">活动产品海报</h3>
+            <p class="card-desc">扫地机器人，呵护爱人，解放双手。</p>
+            <!-- ✅ 加onclick触发弹窗 -->
+            <a onclick="openModal('work1.jpg','活动产品海报','扫地机器人，呵护爱人，解放双手。')" class="card-btn">查看详情</a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card-wrap">
+        <div class="portfolio-card">
+          <div class="card-img-box">
+            <img src="work2.jpg" alt="AI生成创意海报" class="portfolio-card-img">
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">活动产品海报</h3>
+            <p class="card-desc">洗碗机，碗筷交给TA，时间留爱人。</p>
+            <!-- ✅ 加onclick触发弹窗 -->
+            <a onclick="openModal('work2.jpg','活动产品海报','洗碗机，碗筷交给TA，时间留爱人。')" class="card-btn">查看详情</a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card-wrap">
+        <div class="portfolio-card">
+          <div class="card-img-box">
+            <img src="work3.jpg" alt="跨界视觉艺术创作" class="portfolio-card-img">
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">活动产品海报</h3>
+            <p class="card-desc">烤箱，早餐甜蜜，把爱留给爱人。</p>
+            <!-- ✅ 加onclick触发弹窗 -->
+            <a onclick="openModal('work3.jpg','活动产品海报','烤箱，早餐甜蜜，把爱留给爱人。')" class="card-btn">查看详情</a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card-wrap">
+        <div class="portfolio-card">
+          <div class="card-img-box">
+            <img src="work4.jpg" alt="AI插画定制" class="portfolio-card-img">
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">活动产品海报</h3>
+            <p class="card-desc">为爱加码，用行动表达爱意。</p>
+            <!-- ✅ 加onclick触发弹窗 -->
+            <a onclick="openModal('work4.jpg','活动产品海报','为爱加码，用行动表达爱意。')" class="card-btn">查看详情</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 第二排：4个卡片 -->
+      <div class="portfolio-card-wrap">
+        <div class="portfolio-card">
+          <div class="card-img-box">
+            <img src="work5.jpg" alt="UI/UX设计+AI" class="portfolio-card-img">
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">活动促销海报</h3>
+            <p class="card-desc">返券活动，满额返现，电器促销。</p>
+            <!-- ✅ 加onclick触发弹窗 -->
+            <a onclick="openModal('work5.jpg','活动促销海报','返券活动，满额返现，电器促销。')" class="card-btn">查看详情</a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card-wrap">
+        <div class="portfolio-card">
+          <div class="card-img-box">
+            <img src="work6.jpg" alt="AI字体设计" class="portfolio-card-img">
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">活动促销海报</h3>
+            <p class="card-desc">预存10倍翻，家电优惠，扫码参与。</p>
+            <!-- ✅ 加onclick触发弹窗 -->
+            <a onclick="openModal('work6.jpg','活动促销海报','预存10倍翻，家电优惠，扫码参与。')" class="card-btn">查看详情</a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card-wrap">
+        <div class="portfolio-card">
+          <div class="card-img-box">
+            <img src="work7.jpg" alt="品牌画册AI排版" class="portfolio-card-img">
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">活动促销海报</h3>
+            <p class="card-desc">换新补贴，手机电脑，限时特惠。</p>
+            <!-- ✅ 加onclick触发弹窗 -->
+            <a onclick="openModal('work7.jpg','活动促销海报','换新补贴，手机电脑，限时特惠。')" class="card-btn">查看详情</a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card-wrap">
+        <div class="portfolio-card">
+          <div class="card-img-box">
+            <img src="work8.jpg" alt="AI视觉风格迁移" class="portfolio-card-img">
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">活动促销海报</h3>
+            <p class="card-desc">信用卡返现，消费优惠，活动推广。</p>
+            <!-- ✅ 加onclick触发弹窗 -->
+            <a onclick="openModal('work8.jpg','活动促销海报','信用卡返现，消费优惠，活动推广。')" class="card-btn">查看详情</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系方式（卡片化+图标动画） -->
+  <section id="contact" class="contact">
+    <h2 class="section-title">与我联系<br><span>CONTACT</span></h2>
+    <div class="contact-container">
+      <div class="contact-card">
+        <div class="contact-item">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <h4>电话</h4>
+            <p>136-4949-5365</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h4>邮箱</h4>
+            <p>805705086@qq.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-globe"></i>
+          <div>
+            <h4>站酷</h4>
+            <a href="#" target="_blank">https://www.zcool.com.cn/</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-image"></i>
+          <div>
+            <h4>花瓣网</h4>
+            <a href="#" target="_blank">https://huaban.com/</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <p>Design is not just what it looks like and feels like. Design is how it works.</p>
+    <p class="copyright">© 2026 無限進步 - 这里是小罗转AI训练师的日常 谢谢关注</p>
+  </footer>
+
+  <!-- ✅ 只保留1个弹窗容器（完整展示图片），放在script之前 -->
+  <div class="portfolio-modal" id="modal">
+    <div class="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">×</button>
+      <div class="modal-img-container">
+        <img id="modal-img" src="" alt="作品详情">
+      </div>
+      <h3 class="modal-title" id="modal-title"></h3>
+      <p class="modal-desc" id="modal-desc"></p>
+    </div>
+  </div>
+
+  <!-- JS放在最后，确保能找到所有元素 -->
+  <script src="script.js"></script>
+</body>
+</html>
